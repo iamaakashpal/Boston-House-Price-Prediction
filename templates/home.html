@@ -29,7 +29,6 @@ body
 
     position:relative;
     padding:70px 200px;
-
     background:#fff;
     border-radius: 20px;
     box-shadow:0 5px 25px rgba(0,0,0,0.2);
@@ -109,11 +108,11 @@ body
     </style>
 </head>
 <body>
-    <div class="container" display: inline-block;>
+    <div class="container">
         <h2>Boston House Price Prediction&nbsp;</h2>
-        <form action="{{ url_for('predict')}}" method="post" >
+        <form action="{{ url_for('predict')}}" method="post" style="height: 515px;">
             <div class ="inputBox" style="right:150px;">
-                <input type="text" name="CRIM" required="required">
+                <input type="text"  name="CRIM" required="required">
                 <span>CRIM</span>
             </div>            
             <div class ="inputBox" style="right:150px;">
@@ -136,38 +135,43 @@ body
                 <input type="text" name="RM" required="required">
                 <span>RM</span>
             </div>
+            <div class ="inputBox" style="right:150px;">
+                <input type="text" name="LSTAT" required="required">
+                <span>LSTAT</span>
+            </div>            
 
-            <div class ="inputBox" style="left:200px;top:-487px">
+            <div class ="inputBox" style="left:200px;top:-567px">
                 <input type="text" name="AGE" required="required">
                 <span>AGE</span>
             </div>
-            <div class ="inputBox" style="left:200px;top:-487px">
+             <div class ="inputBox" style="left:200px;top:-567px">
                 <input type="text" name="DIS" required="required">
                 <span>DIS</span>
             </div>
-            <div class ="inputBox" style="left:200px;top:-487px">
+            <div class ="inputBox" style="left:200px;top:-567px">
                 <input type="text" name="RAD" required="required">
                 <span>RAD</span>
             </div>            
 
-            <div class ="inputBox" style="left:200px;top:-487px">
+            <div class ="inputBox" style="left:200px;top:-567px">
                 <input type="text" name="TAX" required="required">
                 <span>TAX</span>
             </div>
-            <div class ="inputBox" style="left:200px;top:-487px">
+            <div class ="inputBox" style="left:200px;top:-567px">
                 <input type="text" name="PTRATIO" required="required">
                 <span>PTRATIO</span>
             </div>
-            <div class ="inputBox" style="left:200px;top:-487px">
+            <div class ="inputBox" style="left:200px;top:-567px">
                 <input type="text" name="B" required="required">
                 <span>B</span>
             </div>
-            <div class ="inputBox" style="left:200px;top:-487px">
+            <!-- <div class ="inputBox" style="left:200px;top:-487px">
                 <input type="text" name="LSTAT" required="required">
                 <span>LSTAT</span>
-            </div>
+            </div> -->
 
-            <div class="inputBox" style="right:100px;top:-487px">
+            <div class="inputBox" style="right:-200px;top:-570px">
+                <!-- <div class="inputBox"> -->
                 <input type="submit" value="Predict"></br></br>
                 {{prediction_text}}
                 <!-- <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button> -->
