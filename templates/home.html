@@ -3,11 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Boston House Price Prediction</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'> -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 *
@@ -136,18 +131,18 @@ body
                 <span>RM</span>
             </div>
             <div class ="inputBox" style="right:150px;">
-                <input type="text" name="LSTAT" required="required">
-                <span>LSTAT</span>
+                <input type="text" name="AGE" required="required">
+                <span>AGE</span>
             </div>            
 
             <div class ="inputBox" style="left:200px;top:-567px">
-                <input type="text" name="AGE" required="required">
-                <span>AGE</span>
-            </div>
-             <div class ="inputBox" style="left:200px;top:-567px">
                 <input type="text" name="DIS" required="required">
                 <span>DIS</span>
             </div>
+             <!-- <div class ="inputBox" style="left:200px;top:-567px">
+                <input type="text" name="DIS" required="required">
+                <span>DIS</span>
+            </div> -->
             <div class ="inputBox" style="left:200px;top:-567px">
                 <input type="text" name="RAD" required="required">
                 <span>RAD</span>
@@ -165,26 +160,15 @@ body
                 <input type="text" name="B" required="required">
                 <span>B</span>
             </div>
-            <!-- <div class ="inputBox" style="left:200px;top:-487px">
+            <div class ="inputBox" style="left:200px;top:-567px">
                 <input type="text" name="LSTAT" required="required">
                 <span>LSTAT</span>
-            </div> -->
-
+            </div>
             <div class="inputBox" style="right:-200px;top:-570px">
-                <!-- <div class="inputBox"> -->
                 <input type="submit" value="Predict"></br></br>
                 {{prediction_text}}
-                <!-- <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button> -->
             </div>
-
-            <!-- <input type="text" name="Frequency" placeholder="Frequency" required="required" /><br>
-    	<input type="text" name="Angle of attack" placeholder="Angle of attack" required="required" /><br>
-        <input type="text" name="Chord length" placeholder="Chord length" required="required" /><br>
-        <input type="text" name="Free-stream velocity" placeholder="Free-stream velocity" required="required" /><br>
-        <input type="text" name="Suction side" placeholder="Suction side" required="required" /><br>
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button> -->
         </form>
     </div>
-    <!-- {{prediction_text}} -->
 </body>
 </html>
