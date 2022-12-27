@@ -1,3 +1,3 @@
 # Machine-Learning-Assignment
 
-Application Url :- https://bost0n-house-price.herokuapp.com/
+Application Url :- https://white-translator-jamdb.ineuron.app:5002/
